@@ -1,0 +1,568 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+header {
+	height: 360px;
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	color: white;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1 {
+	font-size: 48px;
+	margin-top: 0px;
+	line-height: 100%;
+	margin-bottom: 40px;
+}
+
+header p {
+	font-size: 36px;
+	line-height: 100%;
+}
+
+.banar {
+	height: 80px;
+	border: solid 1px lightgrey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.subtitles li {
+	font-size: 21px;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.about {
+	margin-bottom: 40px;
+}
+
+.about h1 {
+	color: #ffd61a;
+	font-size: 24px;
+	line-height: 100%;
+	margin-top: 120px;
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: center;
+}
+
+.about h2 {
+	color: grey;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 100%;
+	margin-bottom: 64px;
+	display: flex;
+	justify-content: center;
+}
+
+.about p {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	line-height: 1.75;
+	padding-bottom: 40px;
+}
+
+.course {
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+
+.course h1 {
+	color: #222222;
+	font-size: 24px;
+	line-height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.course p {
+	display: flex;
+	justify-content: center;	
+}
+
+.kenshu {
+	display: flex;
+	justify-content: center;
+}
+
+.kenshu_text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 48px;
+	padding-right: 36px;
+	background-color: whitesmoke;
+}
+
+.kenshu_text h1 {
+	color: #222222;
+	font-size: 24px;
+	line-height: 100%;
+	margin-bottom: 40px;
+}
+
+.chisiki {
+	display: flex;
+	justify-content: center;
+}
+
+.chisiki_text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 36px;
+	padding-right: 48px;
+	background-color: whitesmoke;
+}
+
+.chisiki_text h1 {
+	color: #222222;
+	font-size: 24px;
+	line-height: 100%;
+	margin-bottom: 40px;
+}
+
+.sotsugyo {
+	display: flex;
+	justify-content: center;
+}
+
+.sotsugyo_text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 48px;
+	padding-right: 36px;
+	background-color: whitesmoke;
+}
+
+.sotsugyo_text h1 {
+	color: #222222;
+	font-size: 24px;
+	line-height: 100%;
+	margin-bottom: 40px;
+}
+
+.news h1 {
+	color: #ffd61a;
+	font-size: 24px;
+	line-height: 100%;
+	margin-top: 64px;
+	display: flex;
+	justify-content: center;
+}
+
+.news h2 {
+	color: grey;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 100%;
+	margin-bottom: 64px;
+	display: flex;
+	justify-content: center;
+}
+
+.topics {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin-left: 96px;
+	margin-right: 96px;
+	margin-bottom: 56px;
+}
+
+.topic_1 {
+	width: 234px;
+	margin-right: 32px;
+}
+
+.topic_1 img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 32px;
+}
+
+.topic_2 {
+	width: 234px;
+	margin-right: 32px;
+}
+
+.topic_2 img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 32px;
+}
+
+.topic_3 {
+	width: 234px;
+}
+
+.topic_3 img {
+	width: 100%;
+  object-fit: cover;
+	margin-bottom: 32px;
+}
+
+.topic_date {
+	line-height: 100%;
+	margin-bottom: 24px;
+}
+
+.access {
+	background-color: #fafafa;
+	padding-top: 64px;
+}
+
+.access h1 {
+	font-size: 24px;
+	line-height: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 64px;
+	margin-bottom: 24px;
+}
+
+.access h2 {
+	color: grey;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 100%;
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: center;
+}
+
+.grad-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.grad-btn {
+	color: #fff;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+	border-radius: 6px;
+	text-align: center;
+	background-color: #ffd61a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 64px;
+}
+
+.grad-btn::before {
+	content: "More"
+}
+
+.grad-btn:hover {
+	background-color: #f87f0e;
+}
+
+.grad-item {
+  position: relative;
+  overflow: hidden;
+	height: 120px; /*隠した状態の高さ*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.grad-item::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /*グラデーションで隠す高さ*/
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  content: "";
+}
+
+.grad-trigger {
+  display: none; /*チェックボックスは常に非表示*/
+}
+
+.grad-trigger:checked ~ .grad-btn::before {
+  content: "Close" /*チェックされていたら、文言を変更する*/
+}
+
+.grad-trigger:checked ~ .grad-item {
+  height: auto; /*チェックされていたら、高さを戻す*/
+}
+
+.grad-trigger:checked ~ .grad-item::before {
+  display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+}
+
+.grad-item img {
+	margin-bottom: 64px;
+}
+
+.access_info {
+	text-align: left;
+	margin-bottom: 56px;
+}
+
+.access_info th {
+	font-weight: normal;
+	line-height: 100%;
+	padding-right: 48px;
+	padding-bottom: 24px;
+}
+
+.access_info td {
+	line-height: 100%;
+	padding-bottom: 24px;
+}
+
+.contact {
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+
+.contact h1 {
+	color: #222222;
+	font-size: 24px;
+	line-height: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 64px;
+}
+
+.contact h2 {
+	font-size: 18px;
+	font-weight: normal;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 64px;
+}
+
+.contact > p {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+.input_area {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.input_form {
+	width: 640px;
+	display: flex;
+	justify-content: center;
+}
+
+.textbox {
+	width: 328px;
+	padding: 5px 8px;
+	border-radius: 6px;
+	border: solid 1px gray;
+	margin-left: 120px;
+	margin-bottom: 24px;
+}
+
+.input_title {
+	display: flex;
+}
+
+textarea {
+	width: 328px;
+	height: 108px;
+	border-radius: 6px;
+	border: solid 1px gray;
+	margin-left: 120px;
+	margin-bottom: 40px;
+}
+
+.shibodoki {
+	display: flex;
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.input_checkbox {
+	width: 528px;
+	padding-left: 120px;
+	display: flex;
+	flex-direction: column;
+}
+
+.input_checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.input_checkbox input[type="checkbox"]+label {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+}
+
+.input_checkbox input[type="checkbox"]+label::before {
+	content: "";
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	width: 24px;
+	height: 24px;
+	margin-top: -12px;
+	left: 0;
+	top: 50%;
+	border: 1px solid;
+	border-radius: 6px;
+	border-color: #f0ebe5;
+	background-color:  #f0ebe5;
+}
+
+.input_checkbox input[type="checkbox"]:checked+label::after {
+	content: "";
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	width: 18px;
+	height: 9px;
+	margin-top: -6px;
+	top: 50%;
+	left: 3px;
+	transform: rotate(-45deg);
+	border-bottom: 3px solid;
+	border-left: 3px solid;
+	border-color:  #585753; /* チェックの色変更 お好きな色を */
+}
+
+.checkbox_text {
+	font-size: 14px;
+	padding-left: 64px;
+	margin-bottom: 24px;
+}
+
+input [type="checkbox"] {
+	display: none;
+}
+
+.submit_btn {
+	color: #fff;
+	font-size: 18px;
+	width: 300px;
+	height: 60px;
+	border-radius: 6px;
+	text-align: center;
+	background-color: #ffd61a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.submit_btn:hover {
+	background-color: #f87f0e;
+}
+
+.page_top {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.page_top_btn {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 10px;
+  background: #ffd61a;
+	border-radius: 10%;
+}
+
+.page_top_btn a {
+  position: relative;
+  display: block;
+  width: 60px;
+	height: 60px;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 9px;
+}
+
+.page_top_btn:hover {
+	background-color: #f87f0e;
+}
+
+footer {
+	height: 80px;
+	background-color: #707070;
+	color: white;
+	font-size: 18px;
+	line-height: 100%;
+	padding-top: 32px;
+	display: flex;
+	justify-content: center;
+}
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
